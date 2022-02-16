@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Documentation Page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Editors">HTML Editors</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#HTML_Headings"
+            >HTML Headings</a
+          >
+        </li>
+        <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+        <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Styles"
+            >HTML Styles</a
+          >
+        </li>
+        <li><a class="nav-link" href="#HTML_Formatting">HTML Formatting</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Comments">HTML Comments</a>
+        </li>
+        <!-- <li><a class="nav-link" href="#HTML_Links">HTML Links</a></li> -->
+        <li><a class="nav-link" href="#HTML_Images">HTML Images</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Favicon"
+            >HTML Favicon</a
+          >
+        </li>
+        <li><a class="nav-link" href="#HTML_Classes">HTML Classes</a></li>
+        <li>
+          <a class="nav-link" href="#HTML_Id"
+            >HTML Id</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Introduction">
+        <header>HTML Introduction</header>
+        <article>
+          <p>
+            HTML is the standard markup language for creating Web pages. HTML
+            stands for Hyper Text Markup Language. It is the standard markup
+            language for creating Web pages. It describes the structure of a Web
+            page. It consists of a series of elements. HTML elements tell the
+            browser how to display the content. HTML elements label pieces of
+            content such as "this is a heading", "this is a paragraph", "this is
+            a link", etc.
+          </p>
+          <h3>A Simple HTML Document</h3>
+
+          <code>
+            &lt;!DOCTYPE html&gt; 
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt; 
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+            &lt;/body&gt; 
+            &lt;/html&gt;
+          </code>
+          <p>
+            The &lt;!DOCTYPE html&gt; declaration defines that this document is
+            an HTML5 document. The &lt;html&gt; element is the root element of
+            an HTML page. The &lt;head&gt; element contains meta information
+            about the HTML page.
+          </p>
+          <p>
+            The &lt;title&gt; element specifies a title for the HTML page (which
+            is shown in the browser's title bar or in the page's tab). The
+            &lt;body&gt; element defines the document's body, and is a container
+            for all the visible contents, such as headings, paragraphs, images,
+            hyperlinks, tables, lists, etc. The &lt;h1&gt; element defines a
+            large heading. The &lt;p&gt; element defines a paragraph.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Editors">
+        <header>HTML Editors</header>
+        <article>
+          <p>
+            A simple text editor is all you need to learn HTML. An HTML editor
+            is a piece of software for creating and editing HTML code. It can be
+            a stand-alone software dedicated to code writing and editing or a
+            part of an IDE (Integrated Development Environment).
+          </p>
+          <p>Some free available HTML Editors are:</p>
+
+          <ul>
+            <li>
+              Atom
+            </li>
+            <li>Notepad ++</li>
+            <li>
+              Sublime Text
+            </li>
+            <li>Visual Studio Code</li>
+            <li>UltraEdit</li>
+
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Headings">
+        <header>HTML Headings</header>
+        <article>
+          <p>
+            HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+           <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading:</p>
+          </p>
+          <code>
+            &lt;h1&gt;This is heading 1&lt;/h1&gt;
+            &lt;h2&gt;This is heading 2&lt;/h2&gt;
+            &lt;h3&gt;This is heading 6&lt;/h3&gt;
+            &lt;h4&gt;This is heading 4&lt;/h4&gt;
+            &lt;h5&gt;This is heading 5&lt;/h5&gt;
+            &lt;h6&gt;This is heading 6&lt;/h6&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <article>
+          An HTML element is defined by a start tag, some content, and an end tag.
+          <p>The HTML element is everything from the start tag to the end tag:</p>
+          &lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+          <p>Examples of some HTML elements:</p>
+          <code>
+          &lt;h1&gt;My First Heading&lt;/h1&gt;
+          &lt;p&gt;My first paragraph.&lt;/p&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+        <p>
+          HTML attributes provide additional information about HTML elements.
+          All HTML elements can have attributes.
+          Attributes are always specified in the start tag.
+          Attributes usually come in name/value pairs like: name="value" .
+        </p>
+        <h3>The href Attribute</h3>
+        The &lt;a&gt; tag defines a hyperlink. 
+        The href attribute specifies the URL of the page the link goes to:
+          <code>
+            &lt;a href="https://www.w3schools.com"&gt;Visit W3Schools</a>
+          </code>
+          <h3>The src Attribute</h3>
+        <p>
+          The &lt;img&gt; tag is used to embed an image in an HTML page.
+          The src attribute specifies the path to the image to be displayed:
+        </p>  
+            <code>
+              &lt;img src="img_girl.jpg"&gt;
+            </code>
+
+      </section>
+       <section class="main-section" id="HTML_Styles">
+        <header>HTML Styles</header>
+        <article>
+          The HTML style attribute is used to add styles to an element, such as color, font, size, and more.          <p>
+          <p>Setting the style of an HTML element, can be done with the style attribute. <br>
+            The HTML style attribute has the following syntax:</p>
+          </p>
+          <p>
+            &lt;tagname style="property:value;"&gt; <br>
+            The property is a CSS property and the value is a CSS value.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Formatting">
+        <header>HTML Formatting</header>
+        <article>
+          <p>
+            HTML contains several elements for defining text with a special meaning.<br>
+            Example: <br>
+            <p><b>This is bold text</b></p>
+            <p><i>This text is italic</i></p>
+            <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+          </p>
+
+          <p>
+            Formatting elements were designed to display special types of text:
+          </p>
+          <ul>
+            <li>&lt;b&gt; - Bold text</li>
+            <li>&lt;strong&gt; - Important text</li>
+            <li>&lt;i&gt; - Italic text</li>
+            <li>&lt;em&gt; - Emphasized text</li>
+            <li>&lt;mark&gt; - Marked text</li>
+            <li>&lt;small&gt; - Smaller text</li>
+            <li>&lt;del&gt; - Deleted text</li>
+            <li>&lt;ins&gt; - Inserted text</li>
+            <li>&lt;sub&gt; - Subscript text</li>
+            <li>&lt;sup&gt; - Superscript text</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Comments">
+        <header>HTML Comments</header>
+        <article>
+          <p>
+            HTML comments are not displayed in the browser, but they can help document your HTML source code.
+          </p>
+          <p>
+           <code> &lt;!-- Write your comments here --&gt; </code>
+          </p>
+          Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+        </article>
+      </section>
+      <!-- <section class="main-section" id="HTML_Links">
+        <header>HTML Links</header>
+        <article>
+          <p>
+            Links are found in nearly all web pages. Links allow users to click their way from page to page.<br>
+            HTML links are hyperlinks. You can click on a link and jump to another document.<br>
+            When you move the mouse over a link, the mouse arrow will turn into a little hand.
+          </p>
+          <p>
+            <strong>Note:</strong> A link does not have to be text. A link can be an image or any other HTML element!
+          </p>
+          <h3>HTML Links - Syntax</h3>
+          <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:
+          </p>
+          <code>&lt;a href="url"&gt;link text&lt;/a&gt;
+          </code>
+          <p>
+            The most important attribute of the <a> element is the href attribute, which indicates the link's destination.<br>
+            The link text is the part that will be visible to the reader. <br>
+            Clicking on the link text, will send the reader to the specified URL address.
+          </p>
+          <h3>HTML Links - The target Attribute</h3>
+          <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br>
+             The target attribute specifies where to open the linked document.
+             The target attribute can have one of the following values: </p>
+          <ul>
+            <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+            <li>_blank - Opens the document in a new window or tab</li>
+            <li>_parent - Opens the document in the parent frame</li>
+            <li>_top - Opens the document in the full body of the window</li>
+          </ul>
+        </article>
+      </section> -->
+      <section class="main-section" id="HTML_Images">
+        <header>HTML Images</header>
+        <article>
+          <p>Images can improve the design and the appearance of a web page.</p>
+          <p>The HTML &lt;img&gt; tag is used to embed an image in a web page. <br>
+            Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.<br>        
+            The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</p>
+          <p>The <img> tag has two required attributes:</p>
+          <ul>
+            <li>src - Specifies the path to the image</li>
+            <li>alt - Specifies an alternate text for the image</li>
+          </ul>
+          <h3>Syntax</h3>
+          <code>&lt;img src="url" alt="alternatetext"&gt;
+          </code>
+          <h3>The src Attribute</h3>
+          <p>The required src attribute specifies the path (URL) to the image.
+          <p>Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page.</p>
+             Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon.
+             The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+          <h3>The alt Attribute</h3>
+          <p>The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it<br>
+             (because of slow connection, an error in the src attribute, or if the user uses a screen reader). <br>
+             The value of the alt attribute should describe the image:</p>
+          <code> &lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</code>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Favicon">
+        <header>HTML Favicon</header>
+        <article>
+          A favicon is a small image displayed next to the page title in the browser tab.
+          <p>
+            You can use any image you like as your favicon. You can also create your own favicon on sites like <a href="https://favicon.cc">https://favicon.cc</a>
+            <br><strong>Tip:</strong> A favicon is a small image, so it should be a simple image with high contrast.
+            A favicon image is displayed to the left of the page title in the browser tab.
+          </p>
+          <p>To add a favicon to your website, either save your favicon image to the root directory of your webserver,
+             <br>or create a folder in the root directory called images, and save your favicon image in this folder. 
+            A common name for a favicon image is "favicon.ico".</p>
+            Next, add a &lt;link&gt; element to your "index.html" file, after the &lt;title&gt; element, like this:
+            <code>
+              &lt;!DOCTYPE html&gt; 
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;title&gt;Page Title&lt;/title&gt;
+              <strong>&lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;</strong>
+              &lt;/head&gt;
+              &lt;body&gt; 
+              &lt;h1&gt;My First Heading&lt;/h1&gt;
+              &lt;p&gt;My first paragraph.&lt;/p&gt;
+              &lt;/body&gt; 
+              &lt;/html&gt;
+            </code>
+            Now, save the "index.html" file and reload it in your browser. 
+            <p>Your browser tab should now display your favicon image to the left of the page title.</p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Classes">
+        <header>HTML Classes</header>
+        <article>
+          The HTML class attribute is used to specify a class for an HTML element.<br>
+          Multiple HTML elements can share the same class.
+          <h3>Using The class Attribute</h3>
+          The class attribute is often used to point to a class name in a style sheet.
+          <br>It can also be used by a JavaScript file to access and manipulate elements with the specific class name.
+          <p>In the following example we have two &lt;span&gt; elements with a class attribute with the value of "note". 
+          <br>Both &lt;span&gt; elements will be styled equally according to the .note style definition in the head section:</p>
+          <code>
+            &lt;!DOCTYPE html&gt; 
+            &lt;html&gt;
+            &lt;style&gt;
+              .note {
+                font-size: 120%;
+                color: red;
+              }
+            &lt;/style&gt;
+            &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt; 
+            <b>&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+            &lt;p&gt;This is some  &lt;span class="note"&gt;Important&lt;/span&gt; text&lt;/p&gt;</b>
+            &lt;/body&gt; 
+            &lt;/html&gt;
+          </code>
+          <p>
+            The class attribute can be used on any HTML element.<br>
+            <strong>Note:</strong> The class name is case sensitive!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Id">
+        <header>HTML Id</header>
+        <article>
+          The HTML id attribute is used to specify a unique id for an HTML element.
+          <br>You cannot have more than one element with the same id in an HTML document.
+          <h3>Using The id Attribute</h3>
+          <p>
+            The id attribute specifies a unique id for an HTML element. 
+            The value of the id attribute must be unique within the HTML document.<br>
+            The id attribute is used to point to a specific style declaration in a style sheet. 
+            It is also used by JavaScript to access and manipulate the element with the specific id.
+            <br>The syntax for id is: write a hash character (#), followed by an id name.
+            Then, define the CSS properties within curly braces {}.
+          </p>
+          <p>
+            In the following example we have an &lt;h1&gt; element that points to the id name "myHeader".
+            <br>This &lt;h1&gt; element will be styled according to the #myHeader style definition in the head section:
+          </p>
+          <code>
+            &lt;!DOCTYPE html&gt; 
+            &lt;html&gt;
+            &lt;style&gt;
+            #myHeader {
+              background-color: lightblue;
+              color: black;
+              padding: 40px;
+              text-align: center;
+            }
+            &lt;/style&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt; 
+            <b>&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;</b>
+            &lt;/body&gt; 
+            &lt;/html&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://www.w3schools.com/html/default.asp"
+                target="_blank"
+                >W3Schools</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
